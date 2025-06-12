@@ -5,6 +5,7 @@ python -m venv myenv
 source myenv/bin/activate
 pip install -r requirements.txt
 docker compose up -d
+python generate_test_files.py
 python upload_to_localstack.py
 python download_and_read.py
 ```
